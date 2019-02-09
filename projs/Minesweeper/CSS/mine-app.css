@@ -1,0 +1,98 @@
+body {
+  background-color: black}
+
+  .header{
+    color:white
+  }
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  margin:3px;
+  background-color: gray ;
+  border: 1px solid #333333 ;
+  cursor: pointer ;
+    line-height: 25px ;
+    overflow: hidden ;
+    text-align: center ;
+    border-collapse: separate;
+    border: thick outset;
+     padding: 1px;
+        
+    
+    }
+    .gameOver {
+      background-color:orangered;
+      display:none;
+       position: absolute;
+       padding: 5px;
+       width: 300px;
+    }
+    
+    .timer{
+      background-color: lightblue;
+      top:10px;
+      right: 10px;
+      padding: 5px;
+      width: 200px;
+      border:2px solid darkgray;
+      margin: 2px
+  }
+
+  .score{
+    background-color: lightblue;
+    top:10px;
+    right: 10px;
+    padding: 5px;
+    width: 200px;
+    margin: 2px;
+    border:2px solid darkgray;
+
+}
+
+  .hint {
+    background-color: lightseagreen;
+    display:none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.hint button {
+    float:right;
+}
+
+.modal {
+  background-color: lightseagreen;
+  display:none;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  padding: 5px;
+  width: 300px;
+}
+.smiley img {
+  position: absolute;
+  left: 220px;
+  width:50px;
+}
+
+ul.level {
+  margin: 3px;
+  max-width: 900px;
+  color:white;
+  border:2px,solid,white;
+  background-color: orangered;
+  width: 200px;
+  cursor: pointer ;
+}
+ul > li {
+  margin: 3px;
+  border:2px,solid,white;
+  display: block;
+ }
+ 

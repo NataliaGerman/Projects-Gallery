@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mine Sweeper</title>
+  <link rel="stylesheet" href="css/mine-app.css" />
+</head>
+
+<body onload="init()">
+  <div class="start">
+  <div class="header">Mine Sweeper</div>
+    <ul class="level">
+    <li>
+      <div class="beginner" onclick="updateLevel(4,2)">Beginner (4*4) </div>
+    </li>
+    <li>
+      <div class="medium" onclick="updateLevel(6,5)">Medium (6 * 6) </div>
+    </li>
+    <li>
+      <div class="expert"onclick="updateLevel(8,15)">Expert (8 * 8) </div>
+    </li>
+  </ul>
+<div class="smiley" > <img src="img/normal.jpg"></div>
+  <div class="score">Score<span></span></div>
+  <div class="timer">Timer: <span>00</span> </div>
+  <div class="hints">
+    <button class=" hint1" onclick="hintMode(this)">Hint</button>
+    <button class="hint2" onclick="hintMode(this)">Hint</button>
+    <button class="hint3" onclick="hintMode(this)">Hint</button>
+  </div>
+  <div class="modal"> You can safely click one (unrevealed) cells and reveal it and its neighbors for a second.</div>
+
+  <div class="board-container" ></div>
+  <div class="gameOver">
+    <h3>Game over!</h3>
+    <button onclick="playAgain()">Play again</button>
+
+  </div>
+</div>
+  <script src="js/game.js"></script>
+  <!-- <script src="js/cr.js"></script> -->
+</body>
+
+</html>
